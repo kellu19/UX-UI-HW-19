@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+/*--------------Navigation!-------------*/
+body { 
+   min-height: 100vh; 
+}
+
+.nav {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #FCD796;
+}
+
+ li, a {
+    font-family: "Monserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #411B09;
+    text-decoration: none;
+ }
+
+ header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 3%;
+    background-color: #FCD796;
+ }
+
+ .home {
+    cursor: pointer;
+ }
+
+ .nav_links {
+    list-style: none;
+ }
+
+ .nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+ }
+
+ .nav_links li a {
+    transition: all 0.3s ease 0s;
+ }
+
+ .nav_links li a:hover {
+    font-weight: bold;
+ }
+/*--------------Body!-------------*/
+ #heroImg {
+    box-sizing: border-box;
+    gap: 1.5rem;
+    padding: 0;
+    background-color: #FDF8D8
+ }
+
+ .intro {
+   display: grid;
+   height: 900px;
+   align-content: space-evenly;
+   
+   display: grid;
+   grid-auto-flow: column;
+   gap: 1em;
+ }
+
+ .title {
+   display: grid;
+   position: relative;
+   grid-row-start: 2;
+   bottom: 125px;
+   left: 40px;
+ }
+
+ .greeting {
+   display: grid;
+   position: relative;
+   width: 100%;
+   grid-row-start: 1;
+   top: 50px;
+   left: 20px;
+ }
+
+ .career {
+   display: grid;
+   position: relative;
+   width: 100%;
+   grid-row-start: 3;
+   bottom: 280px;
+   left: 20px;
+
+ }
+
+ .profile {
+   display: grid;
+   height: 100px;
+   position: relative;
+ }
+
+#myWork {
+   background-color: #FCD796;
+   justify-content: space-between;
+}
+
+.workGrid {
+   display: grid;
+   grid-auto-flow: row;
+   grid-template-columns: 49% 49% 1%;
+   gap: 1em;
+}
+
+.Subbr, .TheCenter {
+   display: grid;
+   justify-items: center;
+   background-color: #94B3B2;
+}
+
+
+.TheCenter {
+   grid-column-start: 2;
+}
+
+.button {
+   display: inline-block;
+   position: relative;
+   bottom: 250px;
+
+}
+
+ button {
+    padding: 15px 90px;
+    background-color: #D85517;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+ }
+
+ button:hover {
+    background-color: #F8D7D0;
+ }
+
+ button {
+   font-family: "Monserrat", sans-serif;
+   font-weight: 700;
+   font-size: 22px;
+   color: white;
+   text-decoration: none;
+ }
+
+
+ /*--------------Footer!!-------------*/
+ 
+ .footer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 50px;
+   padding: 20px 50px;
+   margin: 0px;
+   background: #FCD796;
+   grid-column-start: 1;
+   grid-column-end: 6;
+ }
+
+ .footer{
+   padding: 25px 30px;
+   list-style: none;
+}
+
+
+ /*--------------Typography!!-------------*/
+ h1 {
+   font-family: "Merriweather", sans-serif;
+   font-weight: 700;
+   font-size: 80px;
+   color: #D85517;
+   text-decoration: none;
+}
+
+h2 {
+   font-family: "Merriweather", sans-serif;
+   font-weight: 700;
+   font-size: 55px;
+   color: black;
+   text-decoration: none;
+}
+
+h3 {
+   font-family: "Oxygen", sans-serif;
+   font-weight: bold;
+   font-size: 24px;
+   color: black;
+   text-decoration: none;
+}
+
+h4 {
+   font-family: "Oxygen", sans-serif;
+   font-weight: 300;
+   font-size: 14px;
+   color: black;
+   text-decoration: none;
+}
+
+h5 {
+   font-family: "Oxygen", sans-serif;
+   font-weight: 300;
+   font-size: 30px;
+   color: black;
+   text-decoration: none;
+}
+
+p {
+   font-family: "Oxygen", sans-serif;
+   font-weight: 300;
+   font-size: 24px;
+   color: black;
+   text-decoration: none;
+}
+
+@media only screen and (max-width: 600){
+
+   }
+
+   #categoryGrid {
+      margin: 0px 5%;
+      display: grid;
+      grid-template-rows: 400px 400px 400px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: 
+      "intro title career profile"
+      "Subbr TheCenter"
+   }
+
+   #categoryGrid {
+      grid-template-rows: 300px 300px 300px 300px 300px;
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      "intro"
+      "title"
+      "career"
+      "profile"
+      "Subbr"
+      "TheCenter"
+   }
+   
